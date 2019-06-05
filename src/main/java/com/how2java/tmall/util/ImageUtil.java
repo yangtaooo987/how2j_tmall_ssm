@@ -17,7 +17,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class ImageUtil {
-
+    //确保图片文件的二进制格式是jpg
     public static BufferedImage change2jpg(File f) {
         try {
             Image i = Toolkit.getDefaultToolkit().createImage(f.getAbsolutePath());
