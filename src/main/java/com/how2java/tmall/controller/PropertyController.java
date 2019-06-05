@@ -60,7 +60,7 @@ public class PropertyController {
         int total = (int)new PageInfo<>(ps).getTotal();
 
         page.setTotal(total);
-        page.setParam("cid="+c.getId());
+        page.setParam("&cid="+c.getId());
 
         model.addAttribute("ps",ps);
         model.addAttribute("c",c);
